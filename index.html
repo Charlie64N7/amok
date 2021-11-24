@@ -7,29 +7,27 @@
     <title>aM_organic_kombucha</title>
 </head>
 <script>
+    require("web3");
+
     var bottleLocalCount = [];
     var bottleHash = [];
     var bottleGlobalCount = [];
     var bottleToken = [];
 
     function getBottleLocalCount() {
-        var blc = document.getElementById('blc');
-        blc._variable = bottleLocalCount;
+        var blc = bottleLocalCount;
     }
 
     function getBottleHash() {
-        var blc = document.getElementById('bh');
-        blc._variable = bottleLocalCount;
+        var bh = bottleHash;
     }
 
     function getBottleGlobalCount() {
-        var blc = document.getElementById('bgc');
-        blc._variable = bottleLocalCount;
+        var bgc = BottleGlobalCount;
     }
 
     function getBottleToken() {
-        var blc = document.getElementById('bt');
-        blc._variable = bottleLocalCount;
+        var bt = BottleToken;
     } 
 </script>
 <body>
