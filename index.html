@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aM_organic_kombucha</title>
+</head>
+<script>
+    var bottleLocalCount = [];
+    var bottleHash = [];
+    var bottleGlobalCount = [];
+    var bottleToken = [];
+
+    function getBottleLocalCount() {
+        var blc = document.getElementById('blc');
+        blc._variable = bottleLocalCount;
+    }
+
+    function getBottleHash() {
+        var blc = document.getElementById('bh');
+        blc._variable = bottleLocalCount;
+    }
+
+    function getBottleGlobalCount() {
+        var blc = document.getElementById('bgc');
+        blc._variable = bottleLocalCount;
+    }
+
+    function getBottleToken() {
+        var blc = document.getElementById('bt');
+        blc._variable = bottleLocalCount;
+    } 
+</script>
+<body>
+    <div class="bottle-local-count">bottle local count<div id="blc">...</div></div>
+    <div class="bottle-hash"></div>bottle hash<div id="bh">...</div></div>
+    <div class="bottle-global-count">bottle global count</div><div id="bgc">...</div></div>
+    <div class="bottle-token">bottle token</div><div id="t">...</div></div>
+</body>
+</html>
